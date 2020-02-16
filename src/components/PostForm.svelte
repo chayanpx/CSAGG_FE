@@ -48,6 +48,6 @@
     on:click={handleCancleClick}>
     cancle
   </button>
-  <input type="text" name="Topic" placeholder="Topic" bind:value={topic} />
+  <input type="text" name="Topic" placeholder="Topic!" bind:value={topic} />
   <textarea bind:value={content} placeholder="Content" />
 {/if}
