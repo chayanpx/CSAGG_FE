@@ -5,7 +5,7 @@
   import { user, pages } from "../store.js";
   const handlePostClick = () => {
     if (active && topic && content) {
-      fetch("http://localhost:1234/api/posts/", {
+      fetch("https://malakor.herokuapp.com/api/posts/", {
         method: "POST",
         body: JSON.stringify({
           name: $user.username,
@@ -48,6 +48,6 @@
     on:click={handleCancleClick}>
     cancle
   </button>
-  <input type="text" name="Topic" placeholder="Topic!" bind:value={topic} />
+  <input type="text" name="Topic" placeholder="Topic! " bind:value={topic} />
   <textarea bind:value={content} placeholder="Content" />
 {/if}
